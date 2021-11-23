@@ -19,14 +19,22 @@ h3 {
   text-align: center;
 }
 
-hr.hrStar {
-  border: 3px solid white;
-  opacity: 1;
+[class*="star"]::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f005';
 }
 
-hr.hrDarkStar {
-  border: 3px solid #2c3e50;
-  opacity: 1;
+.darkstar{
+    color: #2c3e50
+}
+
+.light-border{
+    border-bottom: 2px solid white;
+}
+
+.dark-border{
+    border-bottom: 2px solid #2c3e50;
 }
 
 .circle-icon{
