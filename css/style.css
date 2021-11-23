@@ -5,6 +5,7 @@
 /* --------------------------------- */
 
 body {
+  font-size: 15px;
   color: white;
 }
 
@@ -15,33 +16,75 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   text-align: center;
 }
-
-[class*="star"]::after{
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: '\f005';
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
 }
 
-.darkstar{
-    color: #2c3e50
+.about a:link,
+.about a:visited {
+  text-decoration: none;
+  color: #1abc9c;
 }
 
-.light-border{
-    border-bottom: 2px solid white;
+.about a:hover {
+  color: white;
+  background-color: #3a546d;
 }
 
-.dark-border{
-    border-bottom: 2px solid #2c3e50;
+.social a:link,
+.social a:visited {
+  color: white;
 }
 
-footer i.rounded-circle{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border: 1px solid white;
+.social a:hover {
+  color: #1abc9c;
+}
+
+.social a:hover .rounded-circle {
+  border: 1px solid #1abc9c;
+}
+
+[class*="star"]::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f005";
+  font-size: 30px;
+}
+
+.darkstar {
+  color: #2c3e50;
+}
+
+.light-border {
+  border-bottom: 2px solid white;
+}
+
+.dark-border {
+  border-bottom: 2px solid #2c3e50;
+}
+
+footer i.rounded-circle {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid white;
 }
 
 .bg-dark {
