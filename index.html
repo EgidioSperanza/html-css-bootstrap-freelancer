@@ -23,49 +23,68 @@
     <!-- #endregion -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- #endregion -->
+    <!-- #region JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- #endregion -->
     <title>Bootstrap Freelancer</title>
   </head>
   <body>
-    <div class="container-fluid bg-darkest">
+    <!-- #region NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bkg-darkest">
       <div class="container">
-        <!-- #region NAVBAR -->
-        <div class="navbar"></div>
-        <!-- #endregion NAVBAR -->
+        <a class="navbar-brand text-uppercase" href="#" aria-current="page">Start Bootstrap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
+    <!-- #endregion NAVBAR -->
     <!-- #region JUMBOTRON -->
-    <div class="container-fluid bg-lightGreen">
-      <div class="container py-5">
-        <div class="d-flex justify-content-center">
-          <div class="col-3">
-            <img
-              class="img-fluid pb-4"
-              src="./img/avatar.svg"
-              alt="Avatar Image"
-            />
-          </div>
-        </div>
-        <h1 class="text-uppercase">Start Bootstrap</h1>
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="col-1 light-border my-4"></div>
-          <div class="col-1 star text-center my-4"></div>
-          <div class="col-1 light-border my-4"></div>
-        </div>
-        <h5 class="text-uppercase">
-          graphic artist - web designer - illustrator
-        </h5>
+    <div class="jumbotron bkg-lightGreen py-4">
+      <img class="pb-4" src="./img/avatar.svg" alt="Avatar Image" />
+      <h1>Start Bootstrap</h1>
+      <div class="hr-custom my-4">
+        <i class="fas fa-star p-4"></i>
       </div>
+      <h3>
+        graphic artist - web designer - illustrator
+      </h3>
     </div>
     <!-- #endregion JUMBOTRON -->
 
     <!-- #region PORTFOLIO -->
     <div class="container-fluid portfolio">
       <div class="container py-5">
-        <h2 class="text-uppercase">PORTFOLIO</h2>
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="col-1 dark-border my-4"></div>
-          <div class="col-1 darkstar text-center my-4"></div>
-          <div class="col-1 dark-border my-4"></div>
+        <a id="portfolio"></a>
+        <h2>PORTFOLIO</h2>
+        <div class="container hr-custom hr-dark my-4">
+          <i class="fas fa-star p-4"></i>
         </div>
         <div class="row">
           <div class="col-12 col-sm-6 col-lg-4">
@@ -116,13 +135,12 @@
     <!-- #endregion PORTFOLIO -->
 
     <!-- #region ABOUT -->
-    <div class="container-fluid bg-lightGreen">
+    <div class="container-fluid bkg-lightGreen">
       <div class="container py-5">
-        <h1 class="text-uppercase">About</h1>
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="col-1 light-border my-4"></div>
-          <div class="col-1 star text-center my-4"></div>
-          <div class="col-1 light-border my-4"></div>
+        <a id="about"></a>
+        <h1>About</h1>
+        <div class="hr-custom my-4">
+          <i class="fas fa-star p-4"></i>
         </div>
         <div class="d-flex justify-content-center flex-wrap">
           <div class="col-12 col-sm-5 p-4">
@@ -152,16 +170,15 @@
     <!-- #endregion ABOUT -->
 
     <!-- #region CONTACTS -->
-    <div class="container-fluid portfolio">
+    <div class="container-fluid contacts">
       <div class="container py-5">
-        <h2 class="text-uppercase">Contact me</h2>
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="col-1 dark-border my-4"></div>
-          <div class="col-1 darkstar text-center my-4"></div>
-          <div class="col-1 dark-border my-4"></div>
+        <h2>Contact me</h2>
+        <div class="hr-custom hr-dark my-4">
+          <i class="fas fa-star p-4"></i>
         </div>
         <div class="d-flex justify-content-center">
           <div class="col-12 col-sm-10 p-4">
+            <a id="contact"></a>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
               natus veniam quasi eligendi iusto nihil facere praesentium itaque
@@ -186,15 +203,15 @@
     <!-- #endregion CONTACTS -->
 
     <!-- #region FOOTER -->
-    <footer class="bg-dark text-center pt-4">
+    <footer class="bkg-dark text-center pt-4">
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-4 pb-4">
-            <h4 class="text-uppercase">Location</h4>
+            <h4>Location</h4>
             <p>2215 John Daniel Drive Clark, MO 54243</p>
           </div>
           <div class="col-12 col-sm-4 pb-4 social">
-            <h4 class="text-uppercase text-nowrap">Around the Web</h4>
+            <h4 class="text-nowrap">Around the Web</h4>
             <div class="row">
               <div class="col-12 text-nowrap">
                 <a href=""><i class="fab fa-facebook-f rounded-circle"></i></a>
@@ -207,7 +224,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-4 pb-4 about">
-            <h4 class="text-uppercase">About Freelancer</h4>
+            <h4>About Freelancer</h4>
             <p>
               Frelance is a free to use, open source Bootstrap theme created by
               <a href="#">Start Bootstrap</a>.
@@ -216,7 +233,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 bg-darkest p-5">
+        <div class="col-12 bkg-darkest p-5">
           Copyright &copy; Your Website 2019
         </div>
       </div>
