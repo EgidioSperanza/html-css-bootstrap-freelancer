@@ -84,6 +84,7 @@ a.nav-link.navbar-link:hover,
 .hr-custom::after {
   content: "";
   width: 20%;
+  max-width: 200px;
   height: 5px;
   border-radius: 3px;
   background-color: white;
