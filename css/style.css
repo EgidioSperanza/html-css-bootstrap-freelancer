@@ -119,6 +119,9 @@ form.custom-form > input, form.custom-form > textarea{
     resize: none;
 }
 
+textarea{
+    content: "";
+}
 .bkg-dark {
   background-color: #3a546d;
 }
