@@ -65,13 +65,14 @@ a.nav-link.navbar-link:visited,
 
 a.nav-link.navbar-link:hover,
 .social a:hover {
-  color: rgba(26,188,156, 1) !important;
+  color: rgba(26, 188, 156, 1) !important;
 }
 
 .social a:hover .rounded-circle {
   border: 1px solid #1abc9c;
 }
 
+/* #region  LINE STAR LINE CUSTOM HR */
 .hr-custom {
   display: flex;
   justify-content: center;
@@ -96,12 +97,26 @@ a.nav-link.navbar-link:hover,
 .hr-custom.hr-dark::after {
   background-color: #2c3e50;
 }
+/* #endregion */
 
 footer i.rounded-circle {
   width: 40px;
   height: 40px;
   line-height: 40px;
   border: 1px solid white;
+}
+
+::placeholder{
+    color: #2c3e50;
+    opacity:1;
+}
+
+form.custom-form > input, form.custom-form > textarea{
+    border: none;
+    width: 100%;
+    border-bottom:1px solid #CCC;
+    color:#2c3e50;
+    resize: none;
 }
 
 .bkg-dark {
